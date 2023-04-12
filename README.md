@@ -1,5 +1,5 @@
 # ls.c
-ls 명령어 구현 "-a", "-l", "-R" 옵션이 지원됨
+ls 명령어 구현 "-a", "-l", "-R" 옵션이 지원됨, 한꺼번에 쓰려면 -al 대신 -a -l 연결하는 방식
 
  S_ISDIR(sb.st_mode)는 파일이 디렉토리인지 확인
 S_IRUSR, S_IWUSR, S_IXUSR, S_IRGRP, S_IWGRP, S_IXGRP, S_IROTH, S_IWOTH, S_IXOTH는 각각 해당 파일의 소유자, 그룹, 그리고 다른 사용자들이 읽기, 쓰기, 실행할 수 있는 권한을 확인, 그렇지 않다면 "-" 출
