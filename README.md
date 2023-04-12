@@ -1,2 +1,2 @@
-# linuxcommands
-making linux command in C
+# ls.c
+ls 명령어 구현 "-a", "-l", "-R" 옵션이 지원됨
