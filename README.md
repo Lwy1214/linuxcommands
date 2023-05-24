@@ -32,3 +32,13 @@ argc 검사: argc가 3이 아닌 경우, 즉 소스 파일과 대상 파일 두 
 성공 메시지 및 파일 닫기: 파일 복사가 완료되면 "File copied successfully." 메시지를 출력합니다. 그리고 열었던 파일들을 fclose 함수를 사용하여 닫아줍니다.
 
 ![cp1](https://github.com/Lwy1214/linuxcommands/assets/72485495/0992421e-ec14-4ea3-8461-42e87e3a2694)
+
+
+# rm.c
+argc는 명령행 인수의 개수 , argv[]는 실제 명령행 인수의 배열
+argc를 이용해서 2보다 작은 경우, 즉 파일 이름이 제공되지 않은 경우 사용법을 출력하고 프로그램을 종료합니다.
+
+ remove 함수는 인수로 전달된 파일 이름의 파일을 삭제하고,
+ 파일 삭제에 실패하면 오류 메세지를 내고, 성공하면 성공 메세지를 냅니다.
+
+![rm](https://github.com/Lwy1214/linuxcommands/assets/72485495/85001a63-ef5c-4f40-b66c-7d5cffd27b23)
