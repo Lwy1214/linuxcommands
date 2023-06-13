@@ -180,7 +180,7 @@ Utime으로 파일의 시간을 갱신하도록 했고, perror로 오류처리�
 리눅스의 yes 명령어와 비슷하게  
 무한반복으로 yes가 출력되도록 만든 코드입니다
 
-#head.c
+# head.c
 
 ![head](https://github.com/Lwy1214/linuxcommands/assets/72485495/8285afa7-73d6-4718-8dfb-70abfee79cde)
 
@@ -191,7 +191,7 @@ Utime으로 파일의 시간을 갱신하도록 했고, perror로 오류처리�
 
 ./head file.txt와 같이 실행하면 file.txt의 처음 10줄을 출력합니다
 
-#tail.c
+# tail.c
 
 ![tail](https://github.com/Lwy1214/linuxcommands/assets/72485495/407567e5-cbe9-4505-99ef-5a88ca13e39a)
 
