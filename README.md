@@ -87,7 +87,13 @@ mkdir 함수가 성공적으로 실행되면, "Directory created successfully." 
 이를 통해 파일을 안전하게 닫아 메모리 누수를 방지할 수 있습니다.
 최대한 비슷하게 구현했습니다
 
+# false.c
 
+![false](https://github.com/Lwy1214/linuxcommands/assets/72485495/cbcbbffb-b6a6-4161-a317-3df783137411)
 
+항상 종료할때 1을 반환하는 false 명령어입니다.
+Return 1로 간단하게 구현되었습니다.
 
+False를 실행한 후 
+echo $? 로 1이 반환된것을 볼 수 있습니다.
 
