@@ -129,8 +129,11 @@ Date에 –u 옵셔널을 추가해서 사용하지 않으면 로컬 시간이 �
 
 # cal,2,3
 ![cal](https://github.com/Lwy1214/linuxcommands/assets/72485495/0e9cb387-edbb-4fe5-b4d1-07346da23f51)
+
 ![cal2](https://github.com/Lwy1214/linuxcommands/assets/72485495/df0e1e5f-1faa-4575-a405-f81534fe750d)
+
 ![cal3](https://github.com/Lwy1214/linuxcommands/assets/72485495/d4e5717b-ff0e-4a24-8331-a114957016f2)
+
 리눅스의 cal을 구현한 코드입니다
 
 기본 cal에서는 현재 달만을 보여주는걸 구현했고
