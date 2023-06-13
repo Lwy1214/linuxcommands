@@ -173,3 +173,14 @@ Touch는 접근 시간 및 수정 시간을 현재 시간으로 변경하고, �
  
 Utime으로 파일의 시간을 갱신하도록 했고, perror로 오류처리하였고, fclose로 코드를 끝냈습니다.
 
+# yes.c 
+
+![yes](https://github.com/Lwy1214/linuxcommands/assets/72485495/a547816e-4d17-4b7c-80ec-b8642e25d7a5)
+
+리눅스의 yes 명령어와 비슷하게  
+무한반복으로 yes가 출력되도록 만든 코드입니다
+
+
+
+
+
