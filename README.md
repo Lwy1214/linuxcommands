@@ -127,3 +127,17 @@ Argv 배열을 통해
 ![date2](https://github.com/Lwy1214/linuxcommands/assets/72485495/d35871bd-1769-4734-880e-4d07a05f40da)
 Date에 –u 옵셔널을 추가해서 사용하지 않으면 로컬 시간이 나오고 사용하면 utc 시간이 나오게끔 구현한 코드입니다.
 
+# cal,2,3
+![cal](https://github.com/Lwy1214/linuxcommands/assets/72485495/0e9cb387-edbb-4fe5-b4d1-07346da23f51)
+![cal2](https://github.com/Lwy1214/linuxcommands/assets/72485495/df0e1e5f-1faa-4575-a405-f81534fe750d)
+![cal3](https://github.com/Lwy1214/linuxcommands/assets/72485495/d4e5717b-ff0e-4a24-8331-a114957016f2)
+리눅스의 cal을 구현한 코드입니다
+
+기본 cal에서는 현재 달만을 보여주는걸 구현했고
+ 
+Cal2에서는 –y 옵셔널의 원하는 연도의 특정 달을 출력하게 하고  윤년을 구현하도록 했습니다.
+
+Cal3에서는 Cal2의 기능을 유지하면서 –y 원하는연도 만을 입력하면 모든 달이 보여지도록 구현했습니다(Cal2에서는 1월달이 보여짐)
+
+
+
