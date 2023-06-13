@@ -159,4 +159,17 @@ mv 명령어의 현재 디렉토리에서의 수정 기능만을 구현한 코�
  예를 들어, ./wc example.txt와 같이 실행하면 example.txt 파일의 행 수, 단어 수, 바이트 수가 출력됩니다.
 
 
+# touch.c
+![btxtbefore](https://github.com/Lwy1214/linuxcommands/assets/72485495/961b0035-bb64-4c62-9089-0df4bbaed22d)
+
+![touch](https://github.com/Lwy1214/linuxcommands/assets/72485495/ba471cec-9390-49ea-a63d-a51a3e9ee6b2)
+
+![touch2](https://github.com/Lwy1214/linuxcommands/assets/72485495/8f36903a-f2e2-4e68-afe7-c580ee1dbcc5)
+
+Touch는 접근 시간 및 수정 시간을 현재 시간으로 변경하고, 파일이 존재하지 않을 경우 새로운 파일을 생성하도록 했습니다.
+
+./touch [file1] [file2] ...
+와 같이 한번에 여러 개의 파일의 시간을 변경할수도 있습니다.
+ 
+Utime으로 파일의 시간을 갱신하도록 했고, perror로 오류처리하였고, fclose로 코드를 끝냈습니다.
 
