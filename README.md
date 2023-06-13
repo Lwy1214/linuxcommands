@@ -201,5 +201,11 @@ Utime으로 파일의 시간을 갱신하도록 했고, perror로 오류처리�
 
 ./tail file.txt와 같이 실행하면 file.txt의 마지막 10줄을 출력합니다
 
+# pwd.c
+
+![pwd](https://github.com/Lwy1214/linuxcommands/assets/72485495/602e6c59-f50b-4c6b-b0fd-589d46633652)
+Pwd 함수는 현재 디렉토리 위치를 보여주는 명령어입니다.
+
+Getcwd 함수를 이용해서 현재 디렉토리 위치를 출력하도록 만들었습니다.
 
 
