@@ -77,3 +77,17 @@ mkdir 함수가 성공적으로 실행되면, "Directory created successfully." 
 ![clear2](https://github.com/Lwy1214/linuxcommands/assets/72485495/36b8355e-a02a-4329-951a-19503abf0e79)
 ![clear](https://github.com/Lwy1214/linuxcommands/assets/72485495/49eb2fe7-bc76-488e-905e-b0d248e0c64e)
 시스템콜로 clear 명령어를 구현했습니다.
+
+# cat.c
+![cat](https://github.com/Lwy1214/linuxcommands/assets/72485495/2ad0baa1-1a15-44ff-b72c-b860de981965)
+위의 코드에서 argc와 argv[]로 인수 카운트
+
+프로그램은 전달된 파일 이름을 fopen 함수를 사용하여 파일을 엽니다. 그리고 fgets 함수를 사용하여 파일에서 한 줄씩 읽어온 후에는 해당 줄을 터미널에 출력합니다. 파일의 끝에 도달하면 fgets는 NULL을 반환하므로 반복문을 종료합니다.
+파일 처리가 완료된 후에는 fclose 함수를 사용하여 파일을 닫습니다. 
+이를 통해 파일을 안전하게 닫아 메모리 누수를 방지할 수 있습니다.
+최대한 비슷하게 구현했습니다
+
+
+
+
+
