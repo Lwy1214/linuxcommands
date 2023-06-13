@@ -98,7 +98,8 @@ False를 실행한 후
 echo $? 로 1이 반환된것을 볼 수 있습니다.
 
 # true.c
-![image](https://github.com/Lwy1214/linuxcommands/assets/72485495/730a2b1f-32c0-4a11-8197-23c474751076)
+![true](https://github.com/Lwy1214/linuxcommands/assets/72485495/a69bc5f6-af05-4887-a559-f407c016de5b)
+
 
 항상 종료할때 0을 반환하는 true 명령어입니다.
 Return 0로 간단하게 구현되었습니다.
@@ -107,7 +108,8 @@ True를 실행한 후
 echo $? 로 0이 반환된것을 볼 수 있습니다.
 
 # echo.c
-![image](https://github.com/Lwy1214/linuxcommands/assets/72485495/3e6d5228-b84d-4c86-b330-8a72bcc03876)
+![echo](https://github.com/Lwy1214/linuxcommands/assets/72485495/73c8972d-132b-4490-9307-82d3c1e670fa)
+
 다음과 같이 false의 1 반환이나 Hello world 와 같이 echo가 정상적으로 작동되는걸 보실수 있습니다.
 
 Argv 배열을 통해 
@@ -119,5 +121,9 @@ Argv 배열을 통해
 # date.c
 ![date](https://github.com/Lwy1214/linuxcommands/assets/72485495/08cb1a19-8e6b-419e-a480-1651ab4ac6f3)
  time() 시스템 콜을 사용하여 현재 시간을 가져온 후, localtime() 함수를 통해 해당 시간을 로컬 시간으로 변환합니다. 그리고 strftime() 함수를 사용하여 로컬 시간을 원하는 형식으로 포맷팅하여 출력합니다. 
+ 
+ # date2.c
 
+![date2](https://github.com/Lwy1214/linuxcommands/assets/72485495/d35871bd-1769-4734-880e-4d07a05f40da)
+Date에 –u 옵셔널을 추가해서 사용하지 않으면 로컬 시간이 나오고 사용하면 utc 시간이 나오게끔 구현한 코드입니다.
 
