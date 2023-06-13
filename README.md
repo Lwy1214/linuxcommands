@@ -209,3 +209,20 @@ Pwd 함수는 현재 디렉토리 위치를 보여주는 명령어입니다.
 Getcwd 함수를 이용해서 현재 디렉토리 위치를 출력하도록 만들었습니다.
 
 
+# man.c
+
+![man](https://github.com/Lwy1214/linuxcommands/assets/72485495/369069ef-3ebe-42ed-8914-c5527772a3ea)
+
+![man2](https://github.com/Lwy1214/linuxcommands/assets/72485495/bdeae0e1-8ed4-4af6-8485-bc7664d351e8)
+
+System함수의 시스템콜을 이용해서 원하는 커맨드의 매뉴얼을 보여주는 방식으로 코드를 구현했습니다.
+
+
+fgets 함수를 사용하여 사용자로부터 입력을 받고, 그 입력을 command 문자열에 저장합니다. 그리고 strcspn 함수를 사용하여 command 문자열에서 공백 문자(' ') 또는 개행 문자('\n')가 나오기 전까지의 부분을 추출합니다
+
+해당위치에는 널 문자('\0')를 삽입하여 종료합니다
+
+
+
+
+
