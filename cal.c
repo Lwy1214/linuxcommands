@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 // 월 이름을 저장하는 배열
 const char* month_name[] = {
@@ -22,7 +23,7 @@ int is_leap_year(int year) {
     return 0;
 }
 
-int main() {
+int main(int argc, char* argv[]) {
     time_t now = time(NULL);
     if (now == -1) {
         perror("time");
@@ -38,12 +39,36 @@ int main() {
     int year = tm_info->tm_year + 1900;
     int month = tm_info->tm_mon + 1;
 
+    // 옵션 처리
+    int show_current_month = 1;  // 현재 월을 출력할지 여부
+    if (argc > 1 && strcmp(argv[1], "-y") == 0) {
+        show_current_month = 0;
+        if (argc > 2) {
+            year = atoi(argv[2]);
+        }
+    }
+
+    // 월 설정
+    if (argc > 1 && !show_current_month) {
+        month = atoi(argv[1]);
+        if (month < 1 || month > 12) {
+            fprintf(stderr, "Invalid month\n");
+            return 1;
+        }
+    }
+
     // 달력 출력
-    printf("     %s %d\n", month_name[month], year);
+    if (show_current_month) {
+        printf("     %s %d\n", month_name[month], year);
+    } else {
+        printf("                         %d\n", year);
+    }
     printf("Su Mo Tu We Th Fr Sa\n");
 
     struct tm first_day = *tm_info;
     first_day.tm_mday = 1;
+    first_day.tm_mon = month - 1;
+    first_day.tm_year = year - 1900;
     mktime(&first_day);
     int weekday = first_day.tm_wday;
 
