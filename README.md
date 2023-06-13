@@ -97,6 +97,25 @@ Return 1로 간단하게 구현되었습니다.
 False를 실행한 후 
 echo $? 로 1이 반환된것을 볼 수 있습니다.
 
+# true.c
+![image](https://github.com/Lwy1214/linuxcommands/assets/72485495/730a2b1f-32c0-4a11-8197-23c474751076)
+
+항상 종료할때 0을 반환하는 true 명령어입니다.
+Return 0로 간단하게 구현되었습니다.
+
+True를 실행한 후 
+echo $? 로 0이 반환된것을 볼 수 있습니다.
+
+# echo.c
+![image](https://github.com/Lwy1214/linuxcommands/assets/72485495/3e6d5228-b84d-4c86-b330-8a72bcc03876)
+다음과 같이 false의 1 반환이나 Hello world 와 같이 echo가 정상적으로 작동되는걸 보실수 있습니다.
+
+Argv 배열을 통해 
+인수를 순회하며 출력하고, 각 인수 사이에 공백을 추가하여 출력합니다.
+
+마지막에는 줄바꿈을 해줍니다.
+
+
 # date.c
 ![date](https://github.com/Lwy1214/linuxcommands/assets/72485495/08cb1a19-8e6b-419e-a480-1651ab4ac6f3)
  time() 시스템 콜을 사용하여 현재 시간을 가져온 후, localtime() 함수를 통해 해당 시간을 로컬 시간으로 변환합니다. 그리고 strftime() 함수를 사용하여 로컬 시간을 원하는 형식으로 포맷팅하여 출력합니다. 
