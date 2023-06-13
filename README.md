@@ -97,3 +97,8 @@ Return 1로 간단하게 구현되었습니다.
 False를 실행한 후 
 echo $? 로 1이 반환된것을 볼 수 있습니다.
 
+# date.c
+![date](https://github.com/Lwy1214/linuxcommands/assets/72485495/08cb1a19-8e6b-419e-a480-1651ab4ac6f3)
+ time() 시스템 콜을 사용하여 현재 시간을 가져온 후, localtime() 함수를 통해 해당 시간을 로컬 시간으로 변환합니다. 그리고 strftime() 함수를 사용하여 로컬 시간을 원하는 형식으로 포맷팅하여 출력합니다. 
+
+
