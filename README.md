@@ -74,5 +74,6 @@ mkdir 함수가 성공적으로 실행되면, "Directory created successfully." 
 
 # clear.c
 
-![clear2](https://github.com/Lwy1214/linuxcommands/assets/72485495/36b8355e-a02a-4329-951a-19503abf0e79)![clear](https://github.com/Lwy1214/linuxcommands/assets/72485495/49eb2fe7-bc76-488e-905e-b0d248e0c64e)
+![clear2](https://github.com/Lwy1214/linuxcommands/assets/72485495/36b8355e-a02a-4329-951a-19503abf0e79)
+![clear](https://github.com/Lwy1214/linuxcommands/assets/72485495/49eb2fe7-bc76-488e-905e-b0d248e0c64e)
 시스템콜로 clear 명령어를 구현했습니다.
