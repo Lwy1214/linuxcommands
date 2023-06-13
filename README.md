@@ -70,3 +70,9 @@ mkdir 함수는 전달된 디렉토리를 생성. 생성된 디렉토리의 권�
 mkdir 함수가 성공적으로 실행되면, "Directory created successfully." 메시지를 출력합니다. 그렇지 않은 경우 "Error creating directory!" 메시지를 출력하고 프로그램을 종료합니다.
 
 ![mkdir](https://github.com/Lwy1214/linuxcommands/assets/72485495/d81752f1-50e2-426f-8416-7791a7e1e597)
+
+
+# clear.c
+
+![clear2](https://github.com/Lwy1214/linuxcommands/assets/72485495/36b8355e-a02a-4329-951a-19503abf0e79)![clear](https://github.com/Lwy1214/linuxcommands/assets/72485495/49eb2fe7-bc76-488e-905e-b0d248e0c64e)
+시스템콜로 clear 명령어를 구현했습니다.
